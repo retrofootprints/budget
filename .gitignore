@@ -1,0 +1,24 @@
+# Bank data must never be committed. Synthetic test fixtures live under
+# tests/fixtures/ and are the only data files allowed in the repo.
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.ofx
+*.qif
+*.sqlite
+*.sqlite3
+*.db
+/data/
+/private/
+# Exported workspaces / configs contain real transactions, names and numbers.
+*.workspace.json
+budget-workspace*.json
+budget-config*.json
+!tests/fixtures/**
+
+node_modules/
+dist/
+dev-dist/
+*.local
+.vite/
